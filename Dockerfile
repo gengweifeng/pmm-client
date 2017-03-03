@@ -1,6 +1,6 @@
 FROM debian:jessie
 
-RUN sudo apt-get update \
+RUN apt-get update \
     && apt-get install wget \
     && wget https://repo.percona.com/apt/percona-release_0.1-4.jessie_all.deb \
     && dpkg -i percona-release_0.1-4.jessie_all.deb \
