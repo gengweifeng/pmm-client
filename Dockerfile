@@ -1,7 +1,7 @@
 FROM debian:jessie
 
-RUN wget https://repo.percona.com/apt/percona-release_0.1-4.$(lsb_release -sc)_all.deb \
-    && sudo dpkg -i percona-release_0.1-4.$(lsb_release -sc)_all.deb \
+RUN wget https://repo.percona.com/apt/percona-release_0.1-4.jessie_all.deb \
+    && sudo dpkg -i percona-release_0.1-4.jessie_all.deb \
     && sudo apt-get update \
     && sudo apt-get install pmm-client
     
