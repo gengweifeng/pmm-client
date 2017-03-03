@@ -7,7 +7,7 @@ RUN apt-get update \
     && apt-get update \
     && apt-get install -y pmm-client
     
-RUN mkdir /percona/pmm-client
+RUN mkdir -p /percona/pmm-client
 
 COPY run.sh /percona/pmm-client/
 
